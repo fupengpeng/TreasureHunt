@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:layout_alignParentTop="true">
+
+    </com.baidu.mapapi.map.MapView>
+    <LinearLayout
+        android:background="#efefef"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="36dp">
+        <Button
+            android:id="@+id/btn_location"
+            android:text="定位"
+            android:background="#efefef"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"/>
+        <Button
+            android:id="@+id/btn_sate"
+            android:text="卫星"
+            android:background="#efefef"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"/>
+        <Button
+            android:id="@+id/btn_fingerpost"
+            android:text="指南"
+            android:background="#efefef"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:allowUndo="false" />
+    </LinearLayout>
+
+</RelativeLayout>
